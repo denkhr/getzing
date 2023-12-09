@@ -23,6 +23,11 @@
 .bg-black {background-color: var(--color-cold-black)}
 .bg-grey {background-color: var(--color-grey)}
 
+.h-flex {display: flex; flex-direction: row;}
+.v-flex {display: flex; flex-direction: column;}
+
+.test-outline {border: 1px solid #12141C;}
+
 body {
     color: var(--color-cold-black);
     background-color: var(--color-yellow);
@@ -42,5 +47,11 @@ body {
     display:         flex;
     justify-content: space-between;
     align-items:     center;
+}
+
+.nav {
+    list-style: none;
+
+    display: flex;
 }
 
