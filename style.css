@@ -64,7 +64,6 @@ nav {
 .nav-list {
     display: flex; 
     gap: 24px;
-    flex-shrink: 2;
 }
 
 .logolink {
