@@ -1,0 +1,19 @@
+:root {
+    font-family: 'Raleway', Arial, sans-serif;
+
+    box-sizing:   border-box;
+
+    --color-yellow: #FFE551;
+    --color-orange: #FF6B00;
+    --color-cold-black: #12141C;
+    --color-grey: #A5A5A5;
+  }  
+
+body {
+    color: var(--color-cold-black);
+    background-color: var(--color-yellow);
+}
+
+nav {
+
+}
