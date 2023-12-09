@@ -46,13 +46,7 @@ ul {padding: 0;}
     padding-left:  var(--container-pad);
 
     width:     100%;
-    max-width: calc(var(--container-pad) + var(--container-width) + var(--container-pad));
-}
-
-.header-flex {
-    display:         flex;
-    justify-content: space-between;
-    align-items:     center;
+    max-width: var(--container-width);
 }
 
 nav {
