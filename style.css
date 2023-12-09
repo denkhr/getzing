@@ -1,5 +1,6 @@
 :root {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size:    8px;
 
     box-sizing:   border-box;
 
@@ -7,6 +8,9 @@
     --color-orange: #FF6B00;
     --color-cold-black: #12141C;
     --color-grey: #A5A5A5;
+
+    --container-paddings: 40px;
+    --container-width: 1240px;
   }  
 
 .c-yellow {color: var(--color-yellow)}
@@ -24,11 +28,19 @@ body {
     background-color: var(--color-yellow);
 }
 
-nav {
+.header-container {
+    margin-right:  auto;
+    margin-left:   auto;
+    padding-right: var(--container-pad);
+    padding-left:  var(--container-pad);
 
+    width:     100%;
+    max-width: calc(var(--container-pad) + var(--container-width) + var(--container-pad));
 }
 
-img {
-    max-width: 100%;
-    height:    auto;
+.header-flex {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
 }
+
