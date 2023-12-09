@@ -9,6 +9,16 @@
     --color-grey: #A5A5A5;
   }  
 
+.c-yellow {color: var(--color-yellow)}
+.c-orange {color:var(--color-orange)}
+.c-black {color: var(--color-cold-black)}
+.c-grey {color: var(--color-grey)}
+
+.bg-yellow {background-color: var(--color-yellow)}
+.bg-orange {background-color:var(--color-orange)}
+.bg-black {background-color: var(--color-cold-black)}
+.bg-grey {background-color: var(--color-grey)}
+
 body {
     color: var(--color-cold-black);
     background-color: var(--color-yellow);
@@ -16,4 +26,9 @@ body {
 
 nav {
 
+}
+
+img {
+    max-width: 100%;
+    height:    auto;
 }
