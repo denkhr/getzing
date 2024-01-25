@@ -159,8 +159,6 @@ $(document).ready(function () {
 
       // Pop-up closing buttong interaction
       $('.popup-close-btn, .popup-background').on('click', function() {
-        popupContainer.fadeOut(200);
-        $('body').removeClass('no-scroll');
       
         //Check if select list is opened and then close it
         selectList.addClass('hidden');
@@ -181,6 +179,9 @@ $(document).ready(function () {
         inputName.val('');
         inputPhone.val('');
         $("#form-checkbox > div").removeClass('w--redirected-checked');
+        // Closing pop-up
+        popupContainer.fadeOut(200);
+        $('body').removeClass('no-scroll');
 
         alert('Are you done?');
       });
