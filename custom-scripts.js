@@ -124,18 +124,27 @@ $(document).ready(function () {
         $('.popup-close-btn, .popup-background').on('click', function() {
   					popupContainer.fadeOut(200);
             $('body').removeClass('no-scroll');
-            selectList.addClass('hidden');
-            $('#select-list-h2').addClass('hidden');
-            $('#step1-h2').removeClass('hidden');
-            selectButton.removeClass('hidden');
-            $('#label-name').removeClass('hidden');
-            inputName.removeClass('hidden');
-            $('#label-phone').removeClass('hidden');
-            inputPhone.removeClass('hidden');
-            $('#form-checkbox').removeClass('hidden');
-            $('#form-next-btn').removeClass('hidden');
-            $('.popup-window').animate({height: '722px'}, 400)
-            //Hello!
+            //Check if select list is opened and then close it
+            if (!selectList.hasClass('hidden')) {
+              selectList.addClass('hidden');
+              $('#select-list-h2').addClass('hidden');
+              $('#step1-h2').removeClass('hidden');
+              selectButton.removeClass('hidden');
+              $('#label-name').removeClass('hidden');
+              inputName.removeClass('hidden');
+              $('#label-phone').removeClass('hidden');
+              inputPhone.removeClass('hidden');
+              $('#form-checkbox').removeClass('hidden');
+              $('#form-next-btn').removeClass('hidden');
+              $('.popup-window').animate({height: '722px'}, 400) 
+            };
+
+            //Clearing the inputs
+            inputPlan.val('');
+            selectButton.text('Choose your plan');
+            inputName.val('');
+            inputPhone.val('');
+            $("#form-checkbox > div").removeClass('w--redirected-checked');
   			});
              
         // Next button interaction
@@ -143,7 +152,7 @@ $(document).ready(function () {
         	if (inputPlan.val() == '') {alert('Please, choose your plan');}
           else if (inputName.val() == '') {alert('Please, enter your name');}
           else if (inputPhone.val() == '') {alert('Please, enter your phone number');}
-          else if (!$("#form-checkbox > div").hasClass("w--redirected-checked")) {alert('Please, check our terms of service');} 
+          else if (!$("#form-checkbox > div").hasClass('w--redirected-checked')) {alert('Please, check our terms of service');} 
           else {
           $('.form-step-1').addClass('hidden');
   				$('.form-step-2').removeClass('hidden');
