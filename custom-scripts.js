@@ -135,6 +135,7 @@ $(document).ready(function () {
             $('#form-checkbox').removeClass('hidden');
             $('#form-next-btn').removeClass('hidden');
             $('.popup-window').animate({height: '722px'}, 400)
+            //Hello!
   			});
              
         // Next button interaction
