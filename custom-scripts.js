@@ -28,17 +28,10 @@ requestAnimationFrame(raf)
 
 }
 
-$(document).ready(function() {
-  // Code to execute on page load
-  alert('Hello! This is an alert message on page load.');
-});
-
 // Form Interactions
 
 $(document).ready(function () {
   
-  alert('Hello!');
-
   // Variables (enter classes here)
   const selectButton = $('.select-button');
   const selectList = $('.select-list');
