@@ -1,1 +1,3 @@
-# getzing site
+# Getzing site files
+
+Extracted from Webflow
