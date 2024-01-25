@@ -1,76 +1,127 @@
-:root {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size:    16px;
 
-    box-sizing:   border-box;
 
-    --color-yellow: #FFE551;
-    --color-orange: #FF6B00;
-    --color-cold-black: #12141C;
-    --color-grey: #A5A5A5;
+	* {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		-o-font-smoothing: antialiased;
+	}
 
-    --container-pad: 40px;
-    --container-width: 1240px;
-  }  
+	html, body {
+  	overflow-x: hidden !important; 
+ 		position: relative; 
+  	width: 100%;
+  }
+  
+	h2 {
+  	font-variant-ligatures: common-ligatures;
+  }
+  
+  .form-input {
+  border: none !important;
+  }
+    
+  .dropdown-select_option::after {
+    content: "Select";
+    background-color: #FF6B00;
+  }
+    
+  .dropdown-select_option:nth-child(2)::before {
+    content: "100";
+  }
+  
+  .dropdown-select_option:nth-child(3)::before {
+    content: "200";
+  }
+  
+  .dropdown-select_option:nth-child(4)::before {
+    content: "300";
+  }
+  
+  .select-button::before {
+  	font-family: Outfit;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+  	content: "Selected plan:";
+  }
+  
+  @media screen and (max-width: 767px) {
+  	.select-button::before {
+    	font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  
+  @media (max-width: 991px) and (min-width:768px) {
+  	.select-button::before {
+    	font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+  	.popup-window {
+    	margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .form-heading {
+    	font-size: 32px;
+      line-height: 32px;
+    }
+    
+    .select-button {
+    	padding-left: 20px;
+    }
+    
+    .form-checkbox {
+    	margin-bottom: 24px;
+      margin-top: -4px;
+    }
+  }
+  
+  .select-option:after {
+    color: #FF6B00;
+    font-family: Outfit;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 24px; 
+  }
+  
+  .select-option:nth-of-type(1):after {
+    	content: '$100 / month';
+	}
+  
+  .select-option:nth-of-type(2):after {
+    	content: '$500 / month';
+	}
+  
+  .select-option:nth-of-type(3):after {
+    	content: '$1500 / month';
+	}
+  
 
-.c-yellow {color: var(--color-yellow)}
-.c-orange {color:var(--color-orange)}
-.c-black {color: var(--color-cold-black)}
-.c-grey {color: var(--color-grey)}
 
-.bg-yellow {background-color: var(--color-yellow)}
-.bg-orange {background-color:var(--color-orange)}
-.bg-black {background-color: var(--color-cold-black)}
-.bg-grey {background-color: var(--color-grey)}
+<!-- Lenis recommended CSS -->
 
-.h-flex {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
-.v-flex {display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
-
-.ph-20 {padding: 0 20px;}
-
-.block {display: block;}
-
-.test-outline {border: 1px solid #12141C;}
-
-body {
-    color: var(--color-cold-black);
-    background-color: var(--color-yellow);
+html.lenis {
+  height: auto;
 }
 
-ul {padding: 0;}
-
-.header-container {
-    margin-right:  auto;
-    margin-left:   auto;
-    padding-right: var(--container-pad);
-    padding-left:  var(--container-pad);
-
-    width:     100%;
-    max-width: var(--container-width);
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
 
-nav {
-    max-width: 633px;
-    list-style: none;
-    flex-grow: 1;
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }
 
-.nav-title {
-    margin: 0 20px 0 0;
-    max-width: 408px;
-    flex-grow: 1;
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
-.nav-list {
-    display: flex; 
-    gap: 24px;
-}
-
-.logolink {
-    max-height: 41px;
-    padding-right: 20px; 
-}
-
-.lang-switch {
- gap: 8px;
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
