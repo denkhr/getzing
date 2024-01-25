@@ -39,6 +39,20 @@ $(document).ready(function () {
   
   alert('Hello!');
 
+  // Variables (enter classes here)
+  const selectButton = $('.select-button');
+  const selectList = $('.select-list');
+  const selectOptions = $('.select-option');
+  const ctaButtons = $('.plan-cta');
+  const popupContainer = $('.popup-container');
+        
+  const inputPlan = $('#input-plan');
+	const inputName = $('#input-name');
+  const inputPhone = $('#input-phone');
+	const outputPlan = $('#output-plan');
+	const outputName = $('#output-name');
+	const outputPhone = $('#output-phone');
+
   // Prevent page scroll for mobile menu
   $('.burger-menu').on('click', function() {
     $('body').toggleClass('no-scroll');
@@ -55,21 +69,7 @@ $(document).ready(function () {
 
   $('.select-wrapper').each(function () {
 
-    // Variables (enter classes here)
-    const selectButton = $('.select-button');
-    const selectList = $('.select-list');
-    const selectOptions = $('.select-option');
-    const ctaButtons = $('.plan-cta');
-    const popupContainer = $('.popup-container');
-        
-    const inputPlan = $('#input-plan');
-		const inputName = $('#input-name');
-  	const inputPhone = $('#input-phone');
-		const outputPlan = $('#output-plan');
-		const outputName = $('#output-name');
-		const outputPhone = $('#output-phone');
-
-		// Pre-selection interactions + adding value to hidden input
+  	// Pre-selection interactions + adding value to hidden input
     ctaButtons.each(function () {
       $(this).on('click', function() {
         //$('body').addClass('no-scroll');
