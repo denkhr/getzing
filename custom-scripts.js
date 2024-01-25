@@ -158,8 +158,9 @@ $(document).ready(function () {
       });
 
       // Pop-up closing buttong interaction
-      $('.popup-close-btn, .popup-background').on('click', function() {
-      
+      $('.popup-close-btn, .popup-background').on('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
         //Check if select list is opened and then close it
         selectList.addClass('hidden');
         $('#select-list-h2').addClass('hidden');
