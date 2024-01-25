@@ -181,6 +181,8 @@ $(document).ready(function () {
         inputName.val('');
         inputPhone.val('');
         $("#form-checkbox > div").removeClass('w--redirected-checked');
+
+        alert('Are you done?');
       });
 
   });
