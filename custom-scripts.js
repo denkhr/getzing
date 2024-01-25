@@ -167,7 +167,32 @@ $(document).ready(function () {
     $('.popup-close-btn, .popup-background').on('click', function() {
       // Closing pop-up
       popupContainer.fadeOut(200);
-      $('body').removeClass('no-scroll');       
+      $('body').removeClass('no-scroll');
+
+      //Check if select list is opened and then close it
+      if (!selectList.hasClass('hidden')) {
+        selectList.addClass('hidden');
+        $('#select-list-h2').addClass('hidden');
+        $('#step1-h2').removeClass('hidden');
+        selectButton.removeClass('hidden');
+        $('#label-name').removeClass('hidden');
+        inputName.removeClass('hidden');
+        $('#label-phone').removeClass('hidden');
+        inputPhone.removeClass('hidden');
+        $('#form-checkbox').removeClass('hidden');
+        $('#form-next-btn').removeClass('hidden');
+        $('.popup-window').animate({height: '722px'}, 400);
+      };
+      
+      //Clearing the inputs
+      inputPlan.val('');
+      selectButton.text('Choose your plan');
+      inputName.val('');
+      inputPhone.val('');
+      $("#form-checkbox > div").removeClass('w--redirected-checked');
+
+      alert('Are you done?');
+        
     });
 
   });
