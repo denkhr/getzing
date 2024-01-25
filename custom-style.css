@@ -1,0 +1,110 @@
+/* Lenis recommended CSS */
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+
+/* My custom styles */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  position: relative;
+  width: 100%;
+}
+
+h2 {
+  font-variant-ligatures: common-ligatures;
+}
+
+.form-input {
+  border: none !important;
+}
+
+.select-button::before {
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  content: "Selected plan:";
+}
+
+.select-option:after {
+  color: #ff6b00;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.select-option:nth-of-type(1):after {
+  content: "$100 / month";
+}
+
+.select-option:nth-of-type(2):after {
+  content: "$500 / month";
+}
+
+.select-option:nth-of-type(3):after {
+  content: "$1500 / month";
+}
+
+@media screen and (max-width: 767px) {
+  .select-button::before {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .select-button::before {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .popup-window {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-heading {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .select-button {
+    padding-left: 20px;
+  }
+
+  .form-checkbox {
+    margin-bottom: 24px;
+    margin-top: -4px;
+  }
+}
