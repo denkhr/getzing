@@ -124,6 +124,17 @@ $(document).ready(function () {
         $('.popup-close-btn, .popup-background').on('click', function() {
   					popupContainer.fadeOut(200);
             $('body').removeClass('no-scroll');
+            selectList.addClass('hidden');
+            $('#select-list-h2').addClass('hidden');
+            $('#step1-h2').removeClass('hidden');
+            selectButton.removeClass('hidden');
+            $('#label-name').removeClass('hidden');
+            inputName.removeClass('hidden');
+            $('#label-phone').removeClass('hidden');
+            inputPhone.removeClass('hidden');
+            $('#form-checkbox').removeClass('hidden');
+            $('#form-next-btn').removeClass('hidden');
+            $('.popup-window').animate({height: '722px'}, 400)
   			});
              
         // Next button interaction
