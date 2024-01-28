@@ -2138,7 +2138,7 @@ textarea.w-input, textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url("./assets/custom-checkmark.svg");
+  background-image: url("../assets/custom-checkmark.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2508,7 +2508,7 @@ a:visited {
   width: 22px;
   height: 24px;
   aspect-ratio: auto;
-  background-image: url("./assets/black-forward-arrow.svg");
+  background-image: url("../assets/black-forward-arrow.svg");
   background-position: 50%;
   background-size: auto;
   background-attachment: scroll;
@@ -3490,7 +3490,7 @@ a:visited {
 .checkbox.w--redirected-checked {
   border: 0px none var(--white);
   background-color: var(--white);
-  background-image: url("./assets/checkbox-orange.svg");
+  background-image: url("../assets/checkbox-orange.svg");
   background-size: auto;
   background-attachment: scroll;
 }
@@ -3531,7 +3531,7 @@ a:visited {
   grid-column-gap: 5%;
   grid-row-gap: 5%;
   background-color: var(--yellow);
-  background-image: url("./assets/plan-button-change.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-change.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 97%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -3547,7 +3547,7 @@ a:visited {
 }
 
 .select-button.ua {
-  background-image: url("./assets/plan-button-change-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-change-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 97%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -3571,7 +3571,7 @@ a:visited {
   grid-row-gap: 8px;
   background-color: var(--yellow);
   cursor: pointer;
-  background-image: url("./assets/plan-button-select.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-select.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 96%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -3589,7 +3589,7 @@ a:visited {
 }
 
 .select-option.ua {
-  background-image: url("./assets/plan-button-select-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-select-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 96%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
