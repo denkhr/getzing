@@ -1,3 +1,3 @@
-# Getzing site files
+# Getzing site
 
-Extracted from Webflow
+My design for Getzing landing page, exported from Webflow.
