@@ -699,7 +699,7 @@
           </div>
         </form>
 
-        <div class="success-message w-form-done">
+        <div id="form-success" class="success-message w-form-done">
           <img
             src="./assets/icon-success.svg"
             loading="lazy" alt="Happy smile icon" class="icon-120 bg-yellow shadow-desktop mb-32" />
@@ -711,7 +711,7 @@
           <a id="form-btn-done" href="#" class="btn _w-466 w-button">Done!</a>
         </div>
 
-        <div class="form-error-message w-form-fail">
+        <div id="form-error" class="form-error-message w-form-fail">
           <div class="text-block-2">
             Oops! Something went wrong while submitting the form.
           </div>
@@ -951,6 +951,49 @@
       });
     });
   </script>
+
+  <script>
+    // Formspree redirect prevention
+    document.addEventListener("DOMContentLoaded", function() {
+      var form = document.getElementById("wf-form-Form-En");
+      var formSuccess = document.getElementById("form-success");
+      var formError = document.getElementById("form-error");
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // You can add additional form validation here if needed
+
+        // Send the form data to Formspree using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action, true);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4) {
+            // Form submission successful
+            if (xhr.status === 200) {
+              // Form submission successful
+              formSuccess.style.display = "block"; // Show success message
+              form.style.display = "none"; // Hide the form
+            } else {
+              // Form submission failed
+              formError.style.display = "block"; // Show error
+            }
+          }
+        };
+
+        // Serialize the form data
+        var formData = new FormData(form);
+        var data = new URLSearchParams(formData).toString();
+
+        // Send the form data
+        xhr.send(data);
+      });
+    });
+  </script>
+
 </body>
 
 </html>
