@@ -2744,6 +2744,7 @@ a:visited {
   margin-right: auto;
   padding-left: 40px;
   padding-right: 40px;
+  position: relative;
 }
 
 .nav-wrapper {
@@ -3362,11 +3363,16 @@ a:visited {
 }
 
 .nav-block-mobile {
-  max-width: 633px;
   flex: 1 0 auto;
   justify-content: space-between;
   align-items: center;
   display: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
 }
 
 .form-label {
@@ -3955,20 +3961,12 @@ a:visited {
 
   .nav-block-mobile {
     z-index: 4;
-    width: 100svw;
     height: 100svh;
-    max-width: 100svw;
-    margin-left: var(--menu-margin-move);
     background-color: var(--cold-black);
     flex-direction: column;
     justify-content: center;
     display: flex;
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    overflow: hidden;
+    transform: translate(100svw);
   }
 
   .checkbox-label {
@@ -4180,14 +4178,6 @@ a:visited {
     padding-bottom: 40px;
     padding-left: 36px;
     padding-right: 36px;
-  }
-
-  .nav-block-mobile {
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
   }
 
   .form-label.grey {
@@ -4555,14 +4545,6 @@ a:visited {
   .form-heading.ua {
     margin-top: -12px;
     margin-bottom: 24px;
-  }
-
-  .nav-block-mobile {
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
   }
 
   .form-input {

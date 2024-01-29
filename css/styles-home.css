@@ -29,7 +29,6 @@ html.lenis {
     -o-font-smoothing: antialiased;
 }
 
-html,
 body {
     overflow-x: hidden !important;
     position: relative;
