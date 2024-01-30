@@ -29,16 +29,6 @@ html.lenis {
     -o-font-smoothing: antialiased;
 }
 
-body {
-    overflow-x: hidden !important;
-    position: relative;
-    width: 100%;
-}
-
-h2 {
-    font-variant-ligatures: common-ligatures;
-}
-
 .form-input {
     border: none !important;
 }
