@@ -2138,7 +2138,7 @@ textarea.w-input, textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
+  background-image: url("../assets/custom-checkbox-checkmark.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2509,7 +2509,7 @@ a:visited {
   width: 22px;
   height: 24px;
   aspect-ratio: auto;
-  background-image: url("https://assets-global.website-files.com/6578f435612fa747eca2152e/6578f435612fa747eca21592_black-forward-arrow.svg");
+  background-image: url("../assets/black-forward-arrow.svg");
   background-position: 50%;
   background-size: auto;
   background-attachment: scroll;
@@ -3516,7 +3516,7 @@ a:visited {
 .checkbox.w--redirected-checked {
   border: 0px none var(--white);
   background-color: var(--white);
-  background-image: url("https://assets-global.website-files.com/6578f435612fa747eca2152e/65afd07915ecbf612d36d323_checkbox-orange.svg");
+  background-image: url("../assets/checkbox-orange.svg");
   background-size: auto;
   background-attachment: scroll;
 }
@@ -3557,7 +3557,7 @@ a:visited {
   grid-column-gap: 5%;
   grid-row-gap: 5%;
   background-color: var(--yellow);
-  background-image: url("https://assets-global.website-files.com/6578f435612fa747eca2152e/65b11dc21f4616f38bcb5a27_plan-button-change.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-change.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 97%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -3573,7 +3573,7 @@ a:visited {
 }
 
 .select-button.ua {
-  background-image: url("https://assets-global.website-files.com/6578f435612fa747eca2152e/65b38ed0b0be055cc8eb95c3_plan-button-change-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-change-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 97%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -3597,7 +3597,7 @@ a:visited {
   grid-row-gap: 8px;
   background-color: var(--yellow);
   cursor: pointer;
-  background-image: url("https://assets-global.website-files.com/6578f435612fa747eca2152e/65b11dc1f052ab41020ed344_plan-button-select.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-select.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 96%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -3615,7 +3615,7 @@ a:visited {
 }
 
 .select-option.ua {
-  background-image: url("https://assets-global.website-files.com/6578f435612fa747eca2152e/65b38ed06caccb1d847ad6a1_plan-button-select-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  background-image: url("../assets/plan-button-select-ua.svg"), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   background-position: 96%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto, auto;
@@ -4745,84 +4745,84 @@ a:visited {
 
 @font-face {
   font-family: 'Outfit';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21573_Outfit-Regular.woff2') format('woff2');
+  src: url('../fonts/Outfit-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21570_Outfit-Medium.woff2') format('woff2');
+  src: url('../fonts/Outfit-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca2156e_Outfit-SemiBold.woff2') format('woff2');
+  src: url('../fonts/Outfit-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21571_Outfit-Bold.woff2') format('woff2');
+  src: url('../fonts/Outfit-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca2156f_Outfit-ExtraBold.woff2') format('woff2');
+  src: url('../fonts/Outfit-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21572_Outfit-Black.woff2') format('woff2');
+  src: url('../fonts/Outfit-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21575_Montserrat-Light.woff2') format('woff2');
+  src: url('../fonts/Montserrat-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21577_Montserrat-Regular.woff2') format('woff2');
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21574_Montserrat-Medium.woff2') format('woff2');
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca21576_Montserrat-Bold.woff2') format('woff2');
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Geologica Variable';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca215a6_Geologica-VariableFont_CRSV%2CSHRP%2Cslnt%2Cwght.ttf') format('truetype');
+  src: url('../fonts/Geologica-VariableFont_CRSV%2CSHRP%2Cslnt%2Cwght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit Variable';
-  src: url('https://uploads-ssl.webflow.com/6578f435612fa747eca2152e/6578f435612fa747eca215a7_Outfit-Variable.ttf') format('truetype');
+  src: url('../fonts/Outfit-Variable.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
